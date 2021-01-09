@@ -1,5 +1,5 @@
 body {
-    font-family: "Georgia", serif;
+    font-family: "Garamond", serif;
     font-size:1em;
     overflow: hidden;
     text-align: right;
@@ -10,12 +10,24 @@ body.sophie {
   margin: 10px
 }
 
-a.nicelink {
+a {
+  display:block;
   text-decoration: none;
   color: #345c9b;
 }
 
-a.nicelink:hover {
-  background-color: #d1ede2;
+a:hover {
   color: black;
+}
+
+.section {
+  margin-bottom: 0.5em;
+}
+
+.section .sub {
+  visibility: hidden;
+}
+
+.section:hover .sub {
+  visibility: visible;
 }
