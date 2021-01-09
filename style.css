@@ -28,6 +28,6 @@ a:hover {
   visibility: hidden;
 }
 
-.section:hover .sub {
+.section:hover .sub, .section:active .sub {
   visibility: visible;
 }
