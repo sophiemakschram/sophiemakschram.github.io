@@ -1,0 +1,21 @@
+body {
+    font-family: "Georgia", serif;
+    font-size:1em;
+    overflow: hidden;
+    text-align: right;
+}
+
+body.sophie {
+  background-color: #f2fffa;
+  margin: 10px
+}
+
+a.nicelink {
+  text-decoration: none;
+  color: #345c9b;
+}
+
+a.nicelink:hover {
+  background-color: #d1ede2;
+  color: black;
+}
