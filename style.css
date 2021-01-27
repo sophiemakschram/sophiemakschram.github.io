@@ -4,8 +4,8 @@ html {
 }
 
 body {
-    font-family: "Garamond", serif;
-    font-size:1em;
+    font-family: "Fraunces", serif;
+    font-size:1.5em;
     overflow: hidden;
     background-image: url("bg.jpg");
     background-size:cover;
@@ -26,21 +26,48 @@ body {
 }
 
 .disable {
+font-family: "Fraunces", serif;
  float: left;
+ border-radius: 5px;
+ background-color: rgba(0,0,0,0);
+ border: none;
+ color: #ffdbe2;
+ text-align: center;
+ text-decoration: none;
+ text-shadow: 1px 1px rgba(0, 0, 0, 0.3), -1px 1px rgba(0, 0, 0, 0.3), 1px -1px rgba(0, 0, 0, 0.3), -1px -1px rgba(0, 0, 0, 0.3);
+ font-size: 0.8em;
+}
+
+.disable:hover {
+ color: black;
+ text-shadow: none;
+ background-color: #ffdbe2;
+}
+
+h1 {
+  text-shadow: 2px 2px #ffdbe2, -2px 2px #ffdbe2, 2px -2px #ffdbe2, -2px -2px #ffdbe2;
+
 }
 
 a {
-  display:block;
+  display:inline;
   text-decoration: none;
-  color: #345c9b;
+  color: #ffdbe2;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3), -2px 2px rgba(0, 0, 0, 0.3), 2px -2px rgba(0, 0, 0, 0.3), -2px -2px rgba(0, 0, 0, 0.3);
 }
 
 a:hover {
   color: black;
+  background-color: #ffdbe2;
+  text-shadow: none;
 }
 
 .section {
   margin-bottom: 0.5em;
+}
+
+.heading {
+  text-shadow: 2px 2px #ffdbe2, -2px 2px #ffdbe2, 2px -2px #ffdbe2, -2px -2px #ffdbe2;
 }
 
 .section .sub {
@@ -49,4 +76,8 @@ a:hover {
 
 .section:hover .sub, .section:active .sub {
   visibility: visible;
+}
+
+span.sub {
+  background-color: #ffdbe2;
 }
