@@ -1,7 +1,7 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://www.w3.org/2005/10/profile">
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html xmlns="http://www.w3.org/1999/xhtml">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Sophie Mak-Schram">
   <meta name="keywords" content="Sophie Mak-Schram Tail Bend Travel">
@@ -15,6 +15,9 @@
 </head>
 
 <body>
+  <div  class="buttonbar">
+    <button class="js-ripples-disable disable">stop ripple effect</button>
+  </div>
   <div class="content">
     <h1>sophie mak-schram</h1>
     <a href="mailto:sophiemakschram@gmail.com">email</a> <br/>
@@ -36,11 +39,7 @@
       <div class="heading">about</div>
       <div class="sub">words about sophie here</div>
     </div>
-
-    <button class="js-ripples-disable disable">stop ripple effect</button>
-
   </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="jquery.ripples.js"></script>
 <script>
@@ -48,8 +47,8 @@ $(document).ready(function() {
 	try {
     $('body').ripples({
 			resolution: 512,
-			dropRadius: 20, //px
-			perturbance: 0.04,
+			dropRadius: 100, //px
+			perturbance: 0.01,
 		});
 	}
 	catch (e) {
@@ -64,3 +63,4 @@ $(document).ready(function() {
 </script>
 
 </body>
+</html>

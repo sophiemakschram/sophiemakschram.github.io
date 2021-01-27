@@ -710,7 +710,9 @@ Ripples.prototype = {
 				'vec3 dy = vec3(0.0, heightY - height, delta.y);',
 				'vec2 offset = -normalize(cross(dy, dx)).xz;',
 				'float specular = pow(max(0.0, dot(offset, normalize(vec2(-0.6, 1.0)))), 4.0);',
-				'gl_FragColor = texture2D(samplerBackground, backgroundCoord + offset * perturbance) + specular;',
+		//		'gl_FragColor = texture2D(samplerBackground, backgroundCoord + offset * perturbance) + specular;',
+        'gl_FragColor = texture2D(samplerBackground, backgroundCoord + offset * perturbance) + (0.1* specular);',
+
 
 			'}'
 		].join('\n'));
