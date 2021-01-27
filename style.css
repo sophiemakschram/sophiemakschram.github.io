@@ -9,7 +9,8 @@ body {
     overflow: hidden;
     background-image: url("bg.jpg");
     background-size:cover;
-    background-position: 20% 0;
+    background-position: center;
+    height: 110%;
     margin: 0;
     padding: 0;
 }
