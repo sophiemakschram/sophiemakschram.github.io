@@ -14,28 +14,53 @@
   <title>Sophie Mak-Schram</title>
 </head>
 
-<body class="sophie">
-    <h1>Sophie Mak-Schram</h1>
+<body>
+  <div class="content">
+    <h1>sophie mak-schram</h1>
     <a href="mailto:sophiemakschram@gmail.com">email</a> <br/>
 
     <div class="section">
-      <div>performances</div>
+      <div class="heading">performances</div>
       <div class="sub">text in section</div>
       <a class="sub" href="xyz">link in section</a>
     </div>
 
     <div class="section">
-      <div>writing</div>
+      <div class="heading">writing</div>
       <a class="sub" href="xyz">text one</a>
       <a class="sub" href="xyz">text with quite a long title</a>
       <a class="sub" href="xyz">words</a>
     </div>
 
     <div class="section">
-      <div>about</div>
+      <div class="heading">about</div>
       <div class="sub">words about sophie here</div>
     </div>
 
+    <button class="js-ripples-disable disable">stop ripple effect</button>
+
   </div>
-</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="jquery.ripples.js"></script>
+<script>
+$(document).ready(function() {
+	try {
+    $('body').ripples({
+			resolution: 512,
+			dropRadius: 20, //px
+			perturbance: 0.04,
+		});
+	}
+	catch (e) {
+		$('.error').show().text(e);
+	}
+
+	$('.js-ripples-disable').on('click', function() {
+		$('body, main').ripples('destroy');
+		$(this).hide();
+	});
+});
+</script>
+
 </body>

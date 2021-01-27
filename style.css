@@ -3,11 +3,14 @@ body {
     font-size:1em;
     overflow: hidden;
     text-align: right;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: top right;
+    margin: 0em;
 }
 
-body.sophie {
-  background-color: #f2fffa;
-  margin: 10px
+.content {
+  margin: 2em;
 }
 
 a {
