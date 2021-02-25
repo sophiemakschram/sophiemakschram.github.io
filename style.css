@@ -13,6 +13,7 @@ body {
     height: 110%;
     margin: 0;
     padding: 0;
+    line-height: 1.4;
 }
 
 .content {
@@ -31,7 +32,7 @@ font-family: "Fraunces", serif;
  border-radius: 5px;
  background-color: rgba(0,0,0,0);
  border: none;
- color: #ffdbe2;
+ color: #c5dbd8;
  text-align: center;
  text-decoration: none;
  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), -2px 2px 1px rgba(0, 0, 0, 0.3), 2px -2px 1px rgba(0, 0, 0, 0.3), -2px -2px 1px rgba(0, 0, 0, 0.3), 2px 0px 1px rgba(0, 0, 0, 0.3), -2px 0px 1px rgba(0, 0, 0, 0.3), 0px -2px 1px rgba(0, 0, 0, 0.3), 0px 2px 1px rgba(0, 0, 0, 0.3);
@@ -41,33 +42,35 @@ font-family: "Fraunces", serif;
 .disable:hover {
  color: black;
  text-shadow: none;
- background-color: #ffdbe2;
+ background-color: #c5dbd8;
 }
 
 h1 {
-  text-shadow: 2px 2px 1px #ffdbe2, -2px 2px 1px #ffdbe2, 2px -2px 1px #ffdbe2, -2px -2px 1px #ffdbe2, 2px 0px 1px #ffdbe2, -2px 0px 1px #ffdbe2, 0px 2px 1px #ffdbe2, 0px -2px 1px #ffdbe2;
+  text-shadow: 2px 2px 1px #c5dbd8, -2px 2px 1px #c5dbd8, 2px -2px 1px #c5dbd8, -2px -2px 1px #c5dbd8, 2px 0px 1px #c5dbd8, -2px 0px 1px #c5dbd8, 0px 2px 1px #c5dbd8, 0px -2px 1px #c5dbd8;
 
 }
 
 a {
   display:inline;
   text-decoration: none;
-  color: #ffdbe2;
+  color: #c5dbd8;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), -2px 2px 1px rgba(0, 0, 0, 0.3), 2px -2px 1px rgba(0, 0, 0, 0.3), -2px -2px 1px rgba(0, 0, 0, 0.3), 2px 0px 1px rgba(0, 0, 0, 0.3), -2px 0px 1px rgba(0, 0, 0, 0.3), 0px -2px 1px rgba(0, 0, 0, 0.3), 0px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 a:hover {
   color: black;
-  background-color: #ffdbe2;
+  background-color: #c5dbd8;
   text-shadow: none;
 }
 
 .section {
   margin-bottom: 0.5em;
+  max-width: 40em;
+  margin-left: auto;
 }
 
 .heading {
-  text-shadow: 2px 2px 1px #ffdbe2, -2px 2px 1px #ffdbe2, 2px -2px 1px #ffdbe2, -2px -2px 1px #ffdbe2, 2px 0px 1px #ffdbe2, -2px 0px 1px #ffdbe2, 0px 2px 1px #ffdbe2, 0px -2px 1px #ffdbe2;
+  text-shadow: 2px 2px 1px #c5dbd8, -2px 2px 1px #c5dbd8, 2px -2px 1px #c5dbd8, -2px -2px 1px #c5dbd8, 2px 0px 1px #c5dbd8, -2px 0px 1px #c5dbd8, 0px 2px 1px #c5dbd8, 0px -2px 1px #c5dbd8;
 }
 
 .section .sub {
@@ -79,5 +82,11 @@ a:hover {
 }
 
 span.sub {
-  background-color: #ffdbe2;
+  background-color: #c5dbd8;
+}
+
+a.sub {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  white-space: nowrap;
 }
