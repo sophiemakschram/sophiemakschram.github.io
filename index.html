@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/2005/10/profile">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Sophie Mak-Schram">
+  <meta name="keywords" content="Sophie Mak-Schram Tail Bend Travel">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="icon"
+        type="image/png"
+        href="favicon.ico" />
+  <title>Sophie Mak-Schram</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div  class="buttonbar">
+    <button class="js-ripples-disable disable">stop ripples</button>
+  </div>
+  <div class="content">
+
+
+    <h1>sophie mak-schram</h1><br/>
+
+    <a href="mailto:sophiemakschram@gmail.com">email</a> <br/><br/>
+
+    <div class="section">
+      <div class="heading">projects</div>
+      <a class="sub" href="">Leicester City Take Over</a>
+      <a class="sub" href="">Tahi</a>
+      <a class="sub" href="">Gentle Stranger</a>
+      <a class="sub" href="">Tools of the Talking Trade</a>
+      <a class="sub" href="">Overheard Map of Now</a>
+      <a class="sub" href="">Posituren</a>
+    </div>
+
+    <div class="section">
+      <div class="heading">performances</div>
+      <a class="sub" href="">Clingfilm Text</a>
+      <a class="sub" href="">Fake Sea Records</a>
+      <a class="sub" href="">The Answer Archive</a> <br/>
+      <span class="sub">Tail Bend Travel:</span>
+      <a class="sub" href="">A Three Sided Stage</a>
+      <a class="sub" href="">The Maybe Museum</a>
+      <a class="sub" href="">Two Hundred to Naught</a>
+      <a class="sub" href="">A European We</a>
+      <a class="sub" href="">South of the Downs</a>
+      <a class="sub" href="">Houserules of Hage</a>
+      <a class="sub" href="">The Jagged Rocks Below</a>
+    </div>
+
+    <div class="section">
+      <div class="heading">writing</div>
+      <a class="sub" href="">In search of what</a>
+    </div>
+
+    <div class="section">
+      <div class="heading">workshops & talks</div>
+
+    </div>
+
+    <div class="section">
+      <div class="heading">about</div>
+      <span class="sub">words about sophie here</span>
+    </div>
+
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="jquery.ripples.js"></script>
+<script>
+$(document).ready(function() {
+	try {
+    $('body').ripples({
+			resolution: 512,
+			dropRadius: 100, //px
+			perturbance: 0.01,
+		});
+	}
+	catch (e) {
+		$('.error').show().text(e);
+	}
+
+	$('.js-ripples-disable').on('click', function() {
+		$('body, main').ripples('destroy');
+		$(this).hide();
+	});
+});
+</script>
+
+</body>
+</html>
